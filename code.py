@@ -1,5 +1,4 @@
-#A Program to Automate the Process of Data Entry.
-
+#1 A Program to Automate the Process of Data Entry.
 def enterdata(newdata):
 
   with open("dataentry.txt","a") as file:
@@ -11,8 +10,11 @@ for i in range(num):
   newdata=input("enter data bro")
   enterdata(newdata)
 
-#SECURE PASSWORD MANAGER
 
+
+
+
+#2 SECURE PASSWORD MANAGER
 !pip install cryptography
 
 from cryptography.fernet import Fernet
@@ -82,8 +84,11 @@ def password_manager():
 password_manager()
 
 
-#Program for Time Tracking Automation
 
+
+
+
+#3 Program for Time Tracking Automation
 import datetime
 
 # Function to start tracking time
@@ -113,7 +118,8 @@ display_elapsed_time(elapsed)
 
 
 
-#Send Reminder Emails and Texts Automation 
+
+#4 Send Reminder Emails and Texts Automation 
 import smtplib
 
 def send_email(receiver_email, subject, message):
@@ -137,7 +143,8 @@ send_email(receiver_email, subject, message)
 
 
 
-#Update Excel Sheets Automatically
+
+#5 Update Excel Sheets Automatically
 !pip install openpyxl
 
 from openpyxl import Workbook
@@ -158,7 +165,10 @@ file_name = '/content/sample.xlsx'
 create_excel(file_name)
 
 
-#Object Detection Automation 
+
+
+
+#6 Object Detection Automation 
 import cv2
 from google.colab.patches import cv2_imshow
 
@@ -184,7 +194,9 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 
-#CURRENCY CONVERTER 
+
+
+#7 CURRENCY CONVERTER 
 def currency_converter(amount, from_currency, to_currency):
     # Define conversion rates (manually or retrieve from a reliable source)
     conversion_rates = {
@@ -208,7 +220,10 @@ currency_converter(amount, from_currency, to_currency)
 
 
 
-#Number cruncher Automation 
+
+
+
+#8 Number cruncher Automation 
 def number_cruncher(numbers):
     total = sum(numbers)
     average = total / len(numbers)
@@ -234,7 +249,9 @@ else:
     print("No valid numbers entered.")
 
 
-#File Management
+
+
+#9 File Management
 import os
 import shutil
 
@@ -298,7 +315,9 @@ manage_files()
 
 
 
-#Extracting key information from text
+
+
+#10 Extracting key information from text
 import nltk
 nltk.download('punkt')
 nltk.download('punkt_tab')
